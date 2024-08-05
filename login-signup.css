@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -55,6 +56,18 @@ button:hover {
     background-color: gold;
     border-color: gold;
 }
+
+.back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+}
+
+.container.right-panel-active .back-button {
+    display: block;
+}
+
 
 form {
     background-color: #ffffff;
@@ -174,4 +187,41 @@ input {
 
 .container.right-panel-active .overlay-right {
     transform: translateX(20%);
+}
+/* Existing styles... */
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.social-button {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.social-button:hover {
+    background-color: #f0f0f0;
+    border-color: #ddd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f6f5f7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
