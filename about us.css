@@ -1,0 +1,84 @@
+/* about.css file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: teal;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about {
+    text-align: center;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.mission, .vision {
+    width: 45%;
+}
+
+h1, h2 {
+    color: teal;
+}
+
+.team {
+    margin-top: 40px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f6f5f7;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
