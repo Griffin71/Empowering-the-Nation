@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+				<li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <img src="emp.png" alt="Empowering the Nation">
+            <h1>Welcome to Empowering the Nation</h1>
+            <p>Your growth is our mission</p>
+            <button onclick="window.location.href='#courses'">View Courses</button>
+            <button onclick="window.location.href='#contact'">Request Information</button>
+        </div>
+    </section>
+    
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Course 1</h3>
+                <p>Brief description of Course 1.</p>
+                <button>View More</button>
+            </div>
+            <div class="course">
+                <h3>Course 2</h3>
+                <p>Brief description of Course 2.</p>
+                <button>View More</button>
+            </div>
+            <!-- Add more courses as needed -->
+        </div>
+    </section>
+    
+    <section id="discount">
+        <h2>Discount Information</h2>
+        <p>Enroll in multiple courses and get discounts!</p>
+        <ul>
+            <li>2 courses: 10% off</li>
+            <li>3 courses: 15% off</li>
+            <li>4 or more courses: 20% off</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Contact Information: info@EmpoweringtheNation.com | 123-456-7890</p>
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>&copy; Griffin 2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>
