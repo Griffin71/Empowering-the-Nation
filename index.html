@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Sign Up</title>
-    <link rel="icon" href="pixel.ico" type="image/x-icon">
-
+    <title>Empowering the Nation</title>
     <link rel="stylesheet" href="login-signup.css">
+    <link rel="icon" href="pixel.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
@@ -17,7 +16,14 @@
                 <input type="email" placeholder="Email" name="email" required>
                 <input type="password" placeholder="Password" name="password" required>
                 <input type="password" placeholder="Confirm Password" name="confirm_password" required>
-               
+                <button type="submit">Sign Up</button>
+                <!--<div class="social-buttons">
+                    <button type="button" class="social-button" onclick="signUpWithFacebook()">Continue with Facebook</button>
+                    <button type="button" class="social-button" onclick="signUpWithGoogle()">Continue with Google</button>
+                </div>-->
+                <div class="back-button" id="backButton">
+                    <a href="#" onclick="switchToSignIn()">&#8592; Back</a>
+                </div>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -32,18 +38,27 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <center><h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p></center>
+                    <button class="ghost" id="signIn" onclick="switchToSignIn()">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start your journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <center><h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p></center>
+                    <button class="ghost" id="signUp" onclick="switchToSignUp()">Sign Up</button>
                 </div>
             </div>
         </div>
+
+       <!-- <footer>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>&copy; Griffin 2024. All rights reserved.</p>
+        </footer>-->
     </div>
+		        <footer>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>&copy; Griffin 2024. All rights reserved.</p>
+        </footer>
     <script src="login-signup.js"></script>
 </body>
 </html>
