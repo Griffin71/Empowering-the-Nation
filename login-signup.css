@@ -4,8 +4,8 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f6f5f7;
+    font-family: 'Calibri Light', sans-serif;
+    background-color: #d3d3d3; /* Grey background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ p {
 }
 
 a {
-    color: teal;
+    color: #505050; /* Mixed grey and black */
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
@@ -35,8 +35,8 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid teal;
-    background-color: teal;
+    border: 1px solid #505050; /* Mixed grey and black */
+    background-color: #505050; /* Mixed grey and black */
     color: white;
     font-size: 12px;
     font-weight: bold;
@@ -67,7 +67,6 @@ button:hover {
 .container.right-panel-active .back-button {
     display: block;
 }
-
 
 form {
     background-color: #ffffff;
@@ -141,9 +140,9 @@ input {
 }
 
 .overlay {
-    background: teal;
-    background: -webkit-linear-gradient(to right, teal, gold);
-    background: linear-gradient(to right, teal, gold);
+    background: #505050; /* Mixed grey and black */
+    background: -webkit-linear-gradient(to right, #505050, gold);
+    background: linear-gradient(to right, #505050, gold);
     color: white;
     position: relative;
     left: -100%;
@@ -188,7 +187,6 @@ input {
 .container.right-panel-active .overlay-right {
     transform: translateX(20%);
 }
-/* Existing styles... */
 
 .social-buttons {
     display: flex;
@@ -211,7 +209,7 @@ input {
     margin: 10px 0;
 }
 
-.social-button:hover {
+social-button:hover {
     background-color: #f0f0f0;
     border-color: #ddd;
 }
@@ -220,7 +218,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #f6f5f7;
+    background-color: #d3d3d3; /* Grey background */
     position: absolute;
     bottom: 0;
     width: 100%;
