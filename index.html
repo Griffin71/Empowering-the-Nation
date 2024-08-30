@@ -10,18 +10,17 @@
         /* Inline CSS for title styling */
         .header {
             text-align: center;
-            margin: 60px 0; /* Adjust top and bottom margin */
+            margin: 60px 0;
         }
         
         .header h1 {
-            color: #228B22; /* A green color that's easy to read */
-            font-size: 2rem; /* Adjust font size as needed */
+            color: #505050; /* Mixed grey and black */
+            font-size: 2rem;
+            font-family: 'Calibri Light', sans-serif;
         }
     </style>
 </head>
 <body>
-   
-
     <div class="container">
         <div class="form-container sign-up-container">
             <form id="signUpForm">
@@ -31,10 +30,6 @@
                 <input type="password" placeholder="Password" name="password" required>
                 <input type="password" placeholder="Confirm Password" name="confirm_password" required>
                 <button type="submit">Sign Up</button>
-                <!--<div class="social-buttons">
-                    <button type="button" class="social-button" onclick="signUpWithFacebook()">Continue with Facebook</button>
-                    <button type="button" class="social-button" onclick="signUpWithGoogle()">Continue with Google</button>
-                </div>-->
                 <div class="back-button" id="backButton">
                     <a href="#" onclick="switchToSignIn()">&#8592; Back</a>
                 </div>
@@ -42,7 +37,6 @@
         </div>
         <div class="form-container sign-in-container">
             <form id="signInForm">
-              
                 <h1>Sign In</h1>
                 <input type="email" placeholder="Email" name="email" required>
                 <input type="password" placeholder="Password" name="password" required>
@@ -68,9 +62,10 @@
 
     <footer>
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-        <p>&copy; Griffin 2024. All rights reserved.</p>
+        <p>&copy; GOV 2024. All rights reserved.</p>
     </footer>
 
     <script src="login-signup.js"></script>
 </body>
 </html>
+
