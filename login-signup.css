@@ -12,6 +12,15 @@ body {
     height: 100vh;
     margin: 0;
 }
+ .header {
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .header h1 {
+            color: #505050; /* Mixed grey and black */
+            font-size: 2rem;
+            font-family: 'Calibri Light', sans-serif;
 
 h1 {
     font-weight: bold;
