@@ -3,28 +3,22 @@
 }
 
 body {
-    font-family: 'Calibri Light', sans-serif;
-    background-color: #d3d3d3; /* Grey background */
+    font-family: 'Arial', sans-serif;
+    background-color: #333; /* Dark grey background */
+    color: #ccc; /* Light grey text */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-h1, h2 {
-    margin: 0;
+    opacity: 0; /* Initial opacity for fade-in */
+    animation: fadeIn 3s forwards; /* 3-second fade-in effect */
 }
 
 h1 {
     font-weight: bold;
-}
-
-h2 {
-    font-size: 24px; /* Adjust as needed */
-    color: black;
-    font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0;
+    color: #fff; /* White color for headings */
 }
 
 p {
@@ -36,7 +30,7 @@ p {
 }
 
 a {
-    color: #505050; /* Mixed grey and black */
+    color: #999; /* Light grey color for links */
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
@@ -44,9 +38,9 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #505050; /* Mixed grey and black */
-    background-color: #505050; /* Mixed grey and black */
-    color: white;
+    border: 1px solid #444; /* Dark grey border */
+    background-color: #444; /* Dark grey background */
+    color: #fff; /* White text */
     font-size: 12px;
     font-weight: bold;
     padding: 12px 45px;
@@ -58,12 +52,12 @@ button {
 
 button.ghost {
     background-color: transparent;
-    border-color: white;
+    border-color: #ccc; /* Light grey border for ghost button */
 }
 
 button:hover {
-    background-color: gold;
-    border-color: gold;
+    background-color: #555; /* Slightly lighter grey on hover */
+    border-color: #555; /* Matching border on hover */
 }
 
 .back-button {
@@ -78,7 +72,8 @@ button:hover {
 }
 
 form {
-    background-color: #ffffff;
+    background-color: #222; /* Very dark grey background for form */
+    color: #ccc; /* Light grey text for form */
     display: flex;
     flex-direction: column;
     padding: 0 50px;
@@ -89,15 +84,16 @@ form {
 }
 
 input {
-    background-color: #eee;
+    background-color: #555; /* Dark grey input fields */
     border: none;
+    color: #fff; /* White text for inputs */
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
 }
 
 .container {
-    background-color: #fff;
+    background-color: #333; /* Dark grey background */
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
@@ -105,7 +101,6 @@ input {
     width: 768px;
     max-width: 100%;
     min-height: 480px;
-    padding: 20px; /* Add padding to ensure content doesn’t touch edges */
 }
 
 .form-container {
@@ -150,10 +145,10 @@ input {
 }
 
 .overlay {
-    background: #505050; /* Mixed grey and black */
-    background: -webkit-linear-gradient(to right, #505050, gold);
-    background: linear-gradient(to right, #505050, gold);
-    color: white;
+    background: #444; /* Dark grey background for overlay */
+    background: -webkit-linear-gradient(to right, #444, #888); /* Gradient from dark to lighter grey */
+    background: linear-gradient(to right, #444, #888);
+    color: #fff; /* White text */
     position: relative;
     left: -100%;
     height: 100%;
@@ -198,81 +193,46 @@ input {
     transform: translateX(20%);
 }
 
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.social-button {
+    border-radius: 20px;
+    border: 1px solid #555; /* Dark grey border for social buttons */
+    background-color: #333; /* Dark grey background for social buttons */
+    color: #ccc; /* Light grey text for social buttons */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+social-button:hover {
+    background-color: #444; /* Slightly lighter grey on hover */
+    border-color: #666; /* Slightly lighter border on hover */
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #d3d3d3; /* Grey background */
+    background-color: #222; /* Very dark grey background for footer */
+    color: #ccc; /* Light grey text for footer */
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.empower-message {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.empower-message h2 {
-    font-size: 24px; /* Adjust as needed */
-    color: black;
-    font-weight: bold;
-    margin-bottom: 20px; /* Space below the heading */
-}
-
-/* Media Queries for Responsiveness */
-
-/* Small Devices (Phones) */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        min-height: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .form-container {
-        padding: 0 20px;
-    }
-
-    .empower-message h2 {
-        font-size: 18px;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-}
-
-/* Medium Devices (Tablets) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .container {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .empower-message h2 {
-        font-size: 20px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-}
-
-/* Large Devices (Desktops) */
-@media (min-width: 1025px) {
-    .container {
-        width: 768px;
-    }
-
-    .empower-message h2 {
-        font-size: 24px;
-    }
-}
-
-
-    footer {
-        font-size: 16px;
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
