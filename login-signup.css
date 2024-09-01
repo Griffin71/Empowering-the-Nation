@@ -114,8 +114,6 @@ input {
     min-height: 480px;
 }
 
-
-
 .form-container {
     position: absolute;
     top: 0;
@@ -227,7 +225,7 @@ input {
     margin: 10px 0;
 }
 
-social-button:hover {
+.social-button:hover {
     background-color: #444; /* Slightly lighter grey on hover */
     border-color: #666; /* Slightly lighter border on hover */
 }
@@ -247,5 +245,60 @@ footer {
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        min-height: 400px;
+    }
+
+    .form-container {
+        padding: 0 20px;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 30px;
+    }
+
+    .logo-img {
+        max-width: 80px; /* Adjust size for smaller screens */
+    }
+
+    .social-button {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .form-container {
+        padding: 0 10px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 20px;
+    }
+
+    .logo-img {
+        max-width: 60px; /* Further adjust size for very small screens */
+    }
+
+    .social-button {
+        padding: 8px 20px;
     }
 }
