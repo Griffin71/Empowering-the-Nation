@@ -12,9 +12,19 @@ body {
     margin: 0;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 h1 {
     font-weight: bold;
-    margin: 0;
+}
+
+h2 {
+    font-size: 24px; /* Adjust as needed */
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 p {
@@ -95,6 +105,7 @@ input {
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+    padding: 20px; /* Add padding to ensure content doesn’t touch edges */
 }
 
 .form-container {
@@ -203,13 +214,10 @@ footer {
 }
 
 .empower-message h2 {
-    font-size: 18px;
+    font-size: 24px; /* Adjust as needed */
     color: black;
     font-weight: bold;
-}
-
-.container {
-    margin-top: 40px; /* Adjust this value to control the distance between the message and the form */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
 /* Media Queries for Responsiveness */
@@ -228,7 +236,7 @@ footer {
     }
 
     .empower-message h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     footer {
@@ -244,7 +252,7 @@ footer {
     }
 
     .empower-message h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     footer {
@@ -259,8 +267,10 @@ footer {
     }
 
     .empower-message h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
+}
+
 
     footer {
         font-size: 16px;
