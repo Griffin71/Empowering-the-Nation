@@ -2,13 +2,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #eee; /* Light grey text for better readability */
+    background-color: #1f1f1f; /* Dark grey background */
+    animation: fadeIn 1s ease-in; /* 3-second fade-in effect */
 }
 
-header {   /* change to  Beige */
-    background-color: teal;
-    color: white;
+header {
+    background-color: #2a2a2a; /* Dark grey header */
+    color: #fff; /* White text */
     padding: 10px 0;
+    text-align: center; /* Centered header content */
 }
 
 nav ul {
@@ -24,14 +27,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ccc; /* Light grey for navigation links */
     text-decoration: none;
     font-weight: bold;
 }
 
 #hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: white;
+    color: #fff; /* White text */
     text-align: center;
     padding: 50px 20px;
 }
@@ -52,8 +55,8 @@ nav ul li a {
 }
 
 #hero button {
-    background-color: gold;
-    color: white;
+    background-color: #444; /* Dark grey button */
+    color: #fff; /* White text */
     border: none;
     padding: 10px 20px;
     margin: 10px;
@@ -73,14 +76,16 @@ nav ul li a {
 }
 
 .course {
-    border: 1px solid #ccc;
+    border: 1px solid #555; /* Grey border for courses */
     padding: 20px;
     margin: 10px;
     width: 300px;
+    background-color: #2e2e2e; /* Darker grey background for courses */
+    color: #eee; /* Light grey text */
 }
 
 .course h3 {
-    color: teal;
+    color: #ddd; /* Light grey for course titles */
 }
 
 #contact form {
@@ -91,19 +96,22 @@ nav ul li a {
 
 #contact label {
     margin-top: 10px;
+    color: #ddd; /* Light grey for labels */
 }
 
 #contact input, #contact textarea {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #666; /* Grey border for inputs */
     border-radius: 5px;
+    background-color: #2e2e2e; /* Dark grey background */
+    color: #ccc; /* Light grey text */
 }
 
 #contact button {
-    background-color: teal;
-    color: white;
+    background-color: #444; /* Dark grey button */
+    color: #fff; /* White text */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -111,17 +119,27 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1c1c1c; /* Darker grey footer */
+    color: #fff; /* White text */
     text-align: center;
     padding: 20px;
 }
 
 footer a {
-    color: gold;
+    color: #f4c542; /* Gold color for links */
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
