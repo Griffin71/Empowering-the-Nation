@@ -196,3 +196,73 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.empower-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.empower-message h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 40px; /* Adjust this value to control the distance between the message and the form */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Phones) */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .form-container {
+        padding: 0 20px;
+    }
+
+    .empower-message h2 {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .empower-message h2 {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) {
+    .container {
+        width: 768px;
+    }
+
+    .empower-message h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
