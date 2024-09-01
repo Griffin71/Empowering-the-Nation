@@ -8,12 +8,12 @@
     <link rel="icon" href="logo2.ico" type="image/x-icon">
 </head>
 <body>
-            <div class="empower-message">
-    <h2>Empowering the nation</h2>
-</div>
-    <div class="container" id="container">
+    <img src="logo2.ico" class="logo-img">
+
+    <div class="container">
         <div class="form-container sign-up-container">
             <form id="signUpForm">
+                <h2>Empowering the nation</h2>
                 <h1>Create Account</h1>
                 <input type="text" placeholder="Username" name="username" required>
                 <input type="email" placeholder="Email" name="email" required>
@@ -27,6 +27,7 @@
         </div>
         <div class="form-container sign-in-container">
             <form id="signInForm">
+                <h2>Empowering the nation</h2>
                 <h1>Sign In</h1>
                 <input type="email" placeholder="Email" name="email" required>
                 <input type="password" placeholder="Password" name="password" required>
@@ -37,25 +38,23 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <center><h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p></center>
-                    <button class="ghost" id="signIn" onclick="switchToSignIn()">Sign In</button>
+                    <img src="logo.jpg" alt="Logo" id="overlay-image" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <center><h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start your journey with us</p></center>
+                    <center>
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                    </center>
                     <button class="ghost" id="signUp" onclick="switchToSignUp()">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
-
+    <br><br><br><br>
     <footer>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p><a href="notSignedInPrivacy.html">Privacy Policy</a> | <a href="notSignedInTerms.html">Terms of Service</a></p>
         <p>&copy; GOV 2024. All rights reserved.</p>
     </footer>
-
     <script src="login-signup.js"></script>
 </body>
 </html>
-
