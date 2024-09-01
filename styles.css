@@ -134,6 +134,38 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Chatbot container styles */
+#chatbot-container {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Toggle button styles */
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #666;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Keyframes for fade-in effect */
 @keyframes fadeIn {
     from {
